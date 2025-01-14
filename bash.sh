@@ -1,6 +1,7 @@
-#!/bin/bash
-for (( COUNTER=0; COUNTER<10; COUNTER++ ))
-do
-   echo The counter is $COUNTER
+#!/bin/bash 
+COUNTER=0 
+while [ $COUNTER -lt 10 ] 
+do 
+   echo The counter is $COUNTER 
+   let COUNTER=$COUNTER+1 
 done
-"This is a new line" 
